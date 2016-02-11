@@ -8,18 +8,18 @@ include "twitterApi.php";
 
 //推特授权设置
 $settings = array(
-    'oauth_access_token' => "2816968314-hg53VWGWR8FmjokKsLHoof1VqlCcmZNQ0mLdKdH",
-    'oauth_access_token_secret' => "kLEb9QfXIG6m92lFtiA96XCQuccuC2Zw39yqaqjRjdoXG",
-    'consumer_key' => "0SbBK7FVPZqW5B7iDkcaf1fqw",
-    'consumer_secret' => "ZKNnXddY8bulVlFEG7GfhwTJxqxMMkzSMi9G1lBNHZJsyOdrcy"
+    'oauth_access_token' => "xxx",
+    'oauth_access_token_secret' => "xxx",
+    'consumer_key' => "xxx",
+    'consumer_secret' => "xxx"
 );
 
 //微信授权设置
 $options = array(
-        'token'=>'VIR6pVmxsGHnaeglFn',
-        'encodingaeskey'=>'PIhgjdhDNKfAB6DEayTzhi5fSonIgxibqMIArOlimVZ',
-        'appid'=>'wx0414d29fe5712e31',	
-        'appsecret'=>'SgfnAwptpGyuva7kHa-lUfEFfb8ZfqeCgnKxHIZfJXLtqLxSA4Gx5juQjkSF_GP4'
+        'token'=>'xxx',
+        'encodingaeskey'=>'xxx',
+        'appid'=>'xxx',	
+        'appsecret'=>'xxx'
 
 );
 
@@ -37,7 +37,7 @@ $data = $weObj->getRevContent();
 if($type=='text'){
    
    //获取最新10条推文
-   if($data=='推文' || $data=='110'){
+   if($data=='推文'){
         $msg=$twitter->getTwitter('leafrainy',10);
    }else{//发推
         $msg=$twitter->postTwitter($data);
